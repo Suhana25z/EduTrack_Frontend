@@ -1,6 +1,6 @@
 import { normalizeSubjectName } from "./utils/subjects";
 
-const API_BASE = "http://localhost:8080/api";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8080/api";
 
 const TOKEN_KEY = "edutrackToken";
 const ROLE_KEY = "edutrackRole";
